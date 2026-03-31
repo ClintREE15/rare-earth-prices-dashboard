@@ -16,11 +16,11 @@
   .tab.active { background: #3b82f6; border-color: #3b82f6; color: #fff; font-weight: 600; }
   .chart-container { background: #f8fafc; border-radius: 14px; padding: 24px; margin-bottom: 24px; border: 1px solid #e2e8f0; }
   .chart-wrapper { position: relative; height: 420px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-bottom: 24px; }
-  .card { background: #f8fafc; border-radius: 12px; padding: 18px; border: 1px solid #e2e8f0; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; max-width: 960px; margin-left: auto; margin-right: auto; }
+  .card { background: #f8fafc; border-radius: 12px; padding: 18px; border: 1px solid #e2e8f0; overflow-x: auto; }
   .card h3 { font-size: 0.95rem; color: #2563eb; margin-bottom: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
-  th { text-align: left; padding: 8px 10px; color: #64748b; border-bottom: 1px solid #e2e8f0; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 620px; }
+  th { text-align: left; padding: 8px 10px; color: #64748b; border-bottom: 1px solid #e2e8f0; font-weight: 600; white-space: nowrap; }
   td { padding: 7px 10px; border-bottom: 1px solid #f1f5f9; }
   tr:hover td { background: #e2e8f0; }
   .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
