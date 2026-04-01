@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rare Earth Prices – Export vs Domestic Comparison</title>
+<title>Rare Earth Prices â Export vs Domestic Comparison</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,7 +48,7 @@
 <body>
 
 <h1>Rare Earth Element Prices</h1>
-<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices — Week of March 30, 2026</p>
+<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices â Week of March 31, 2026</p>
 
 <div class="summary-row" id="summaryRow"></div>
 
@@ -81,16 +81,16 @@ const data = {
   "Cerium": {
     export: [
       { market: "Carbonate min 45% REO fob China", unit: "$/kg", low: 0.82, high: 0.92, change: "nc" },
-      { market: "Metal min 99.9% C 0.03% max fob China", unit: "$/kg", low: 7.00, high: 7.20, change: "nc" },
-      { market: "Metal min 99% fob China", unit: "$/kg", low: 5.20, high: 5.50, change: "nc" },
-      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 2170, high: 2320, change: "nc" },
+      { market: "Metal min 99% fob China", unit: "$/kg", low: 5.80, high: 6.30, change: "+0.7" },
+      { market: "Metal min 99.9% C 0.03% max fob China", unit: "$/kg", low: 7.30, high: 7.50, change: "+0.3" },
+      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 2250, high: 2400, change: "+80" },
       { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 2.25, high: 2.50, change: "nc" }
     ],
     domestic: [
       { market: "Carbonate min 45% REO ex-works", unit: "Yn/t", low: 5000, high: 5500, change: "nc" },
-      { market: "Metal min 99.9% C 0.03% max ex-works", unit: "Yn/t", low: 42000, high: 45000, change: "nc" },
-      { market: "Metal min 99% ex-works", unit: "Yn/t", low: 31000, high: 32000, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 13500, high: 14500, change: "nc" }
+      { market: "Metal min 99.9% C 0.03% max ex-works", unit: "Yn/t", low: 44000, high: 47000, change: "+2000" },
+      { market: "Metal min 99% ex-works", unit: "Yn/t", low: 34000, high: 35000, change: "+3000" },
+      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 14000, high: 15000, change: "+500" }
     ]
   },
   "Dysprosium": {
@@ -102,7 +102,7 @@ const data = {
     ],
     domestic: [
       { market: "Metal min 99% ex-works", unit: "Yn/kg", low: 1720, high: 1740, change: "nc" },
-      { market: "Oxide min 99.5% ex-works", unit: "Yn/kg", low: 1365, high: 1380, change: "-7.5" }
+      { market: "Oxide min 99.5% ex-works", unit: "Yn/kg", low: 1360, high: 1380, change: "-2.5" }
     ]
   },
   "Europium": {
@@ -122,6 +122,20 @@ const data = {
       { market: "Oxide min 99.5% ex-works", unit: "Yn/t", low: 400000, high: 405000, change: "nc" }
     ]
   },
+  "Ferro-dysprosium": {
+    export: [
+      { market: "min 80% Dy fob China", unit: "$/kg", low: 245, high: 265, change: "nc" }
+    ],
+    domestic: [
+      { market: "min 80% Dy ex-works", unit: "Yn/kg", low: 1320, high: 1340, change: "nc" }
+    ]
+  },
+  "Ferro-gadolinium": {
+    export: [],
+    domestic: [
+      { market: "min 75% Gd ex-works", unit: "Yn/t", low: 197000, high: 202000, change: "+2000" }
+    ]
+  },
   "Gadolinium": {
     export: [
       { market: "Metal min 99% fob China", unit: "$/kg", low: 76, high: 91, change: "nc" },
@@ -132,9 +146,8 @@ const data = {
     ],
     domestic: [
       { market: "Metal min 99% ex-works", unit: "Yn/t", low: 350000, high: 370000, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 200000, high: 205000, change: "nc" },
-      { market: "Oxide min 99.99% ex-works", unit: "Yn/t", low: 225000, high: 235000, change: "nc" },
-      { market: "Oxide 99.99-99.999% cif Europe", unit: "$/kg", low: 600, high: 1000, change: "nc" }
+      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 204000, high: 208000, change: "+3500" },
+      { market: "Oxide min 99.99% ex-works", unit: "Yn/t", low: 225000, high: 235000, change: "nc" }
     ]
   },
   "Holmium": {
@@ -168,6 +181,16 @@ const data = {
       { market: "Oxide min 99.99% ex-works", unit: "Yn/kg", low: 5200, high: 5400, change: "nc" }
     ]
   },
+  "Mischmetal": {
+    export: [
+      { market: "35% La 65% Ce fob China", unit: "$/kg", low: 5.50, high: 5.80, change: "nc" },
+      { market: "Low Zn and Mg fob China", unit: "$/kg", low: 24.50, high: 27.50, change: "nc" }
+    ],
+    domestic: [
+      { market: "35% La 65% Ce ex-works", unit: "Yn/t", low: 27000, high: 28000, change: "nc" },
+      { market: "Low Zn and Mg ex-works", unit: "Yn/t", low: 170000, high: 190000, change: "nc" }
+    ]
+  },
   "Neodymium": {
     export: [
       { market: "Metal min 99% fob China", unit: "$/kg", low: 162, high: 164, change: "nc" },
@@ -190,21 +213,19 @@ const data = {
     ],
     domestic: [
       { market: "Metal min 99% ex-works", unit: "Yn/t", low: 980000, high: 990000, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 780000, high: 785000, change: "nc" },
-      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 130, high: 140, change: "nc" }
+      { market: "Oxide 99.5-99.9% ex-works", unit: "Yn/t", low: 780000, high: 785000, change: "nc" }
     ]
   },
   "PrNd": {
     export: [
-      { market: "Metal min 99% fob China", unit: "$/kg", low: 131.50, high: 133, change: "nc" },
-      { market: "Oxide min 99% fob China", unit: "$/t", low: 106500, high: 107500, change: "nc" },
+      { market: "Metal min 99% fob China", unit: "$/kg", low: 131.50, high: 133.50, change: "+0.25" },
+      { market: "Oxide min 99% fob China", unit: "$/t", low: 107000, high: 108000, change: "+500" },
       { market: "Oxide min 99% cif Europe", unit: "$/kg", low: 123, high: 126, change: "nc" },
       { market: "Oxide min 99% ddp US", unit: "$/kg", low: 115, high: 125, change: "nc" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "Yn/t", low: 880000, high: 890000, change: "nc" },
-      { market: "Oxide min 99% ex-works", unit: "Yn/t", low: 710000, high: 715000, change: "nc" },
-      { market: "Oxide min 99% cif Europe", unit: "Yn/t", low: 123, high: 126, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "Yn/t", low: 880000, high: 895000, change: "+2500" },
+      { market: "Oxide min 99% ex-works", unit: "Yn/t", low: 718000, high: 725000, change: "+9000" }
     ]
   },
   "Samarium": {
@@ -226,7 +247,7 @@ const data = {
     ],
     domestic: [
       { market: "Metal min 99.9% ex-works", unit: "Yn/kg", low: 7550, high: 7600, change: "nc" },
-      { market: "Oxide min 99.99% ex-works", unit: "Yn/kg", low: 6030, high: 6080, change: "-20" }
+      { market: "Oxide min 99.99% ex-works", unit: "Yn/kg", low: 6030, high: 6080, change: "nc" }
     ]
   },
   "Ytterbium": {
@@ -304,7 +325,7 @@ function renderCharts() {
   const expUnits = el.export.map(i => i.unit);
 
   if (exportChartObj) exportChartObj.destroy();
-  document.getElementById('exportChartTitle').textContent = displayName + ' — Export Prices (USD)';
+  document.getElementById('exportChartTitle').textContent = displayName + ' â Export Prices (USD)';
 
   exportChartObj = new Chart(document.getElementById("exportChart").getContext("2d"), {
     type: 'bar',
@@ -344,7 +365,7 @@ function renderCharts() {
   const domUnits = el.domestic.map(i => i.unit);
 
   if (domesticChartObj) domesticChartObj.destroy();
-  document.getElementById('domesticChartTitle').textContent = displayName + ' — China Domestic Prices (CNY)';
+  document.getElementById('domesticChartTitle').textContent = displayName + ' â China Domestic Prices (CNY)';
 
   domesticChartObj = new Chart(document.getElementById("domesticChart").getContext("2d"), {
     type: 'bar',
@@ -392,7 +413,7 @@ function renderTables() {
     const name = el === 'PrNd' ? 'Praseodymium-Neodymium' : el;
     const rows = (items, type) => items.map(i => `
       <tr>
-        <td style="color:${type === 'export' ? '#2563eb' : '#ea580c'}">${type === 'export' ? '🌐' : '🇨🇳'}</td>
+        <td style="color:${type === 'export' ? '#2563eb' : '#ea580c'}">${type === 'export' ? 'ð' : 'ð¨ð³'}</td>
         <td>${i.market}</td>
         <td>${i.unit}</td>
         <td style="text-align:right">${i.low.toLocaleString()}</td>
@@ -405,7 +426,7 @@ function renderTables() {
         <h3>${name}</h3>
         <div class="table-wrap">
         <table>
-          <thead><tr><th></th><th>Market</th><th>Unit</th><th style="text-align:right">Low</th><th style="text-align:right">High</th><th style="text-align:center">±</th></tr></thead>
+          <thead><tr><th></th><th>Market</th><th>Unit</th><th style="text-align:right">Low</th><th style="text-align:right">High</th><th style="text-align:center">Â±</th></tr></thead>
           <tbody>
             ${rows(d.export, 'export')}
             ${rows(d.domestic, 'domestic')}
