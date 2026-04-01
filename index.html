@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rare Earth Prices â Export vs Domestic Comparison</title>
+<title>Rare Earth Prices - Export vs Domestic Comparison</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,7 +48,7 @@
 <body>
 
 <h1>Rare Earth Element Prices</h1>
-<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices â Week of March 31, 2026</p>
+<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices - Week of March 31, 2026</p>
 
 <div class="summary-row" id="summaryRow"></div>
 
@@ -325,7 +325,7 @@ function renderCharts() {
   const expUnits = el.export.map(i => i.unit);
 
   if (exportChartObj) exportChartObj.destroy();
-  document.getElementById('exportChartTitle').textContent = displayName + ' â Export Prices (USD)';
+  document.getElementById('exportChartTitle').textContent = displayName + ' - Export Prices (USD)';
 
   exportChartObj = new Chart(document.getElementById("exportChart").getContext("2d"), {
     type: 'bar',
@@ -365,7 +365,7 @@ function renderCharts() {
   const domUnits = el.domestic.map(i => i.unit);
 
   if (domesticChartObj) domesticChartObj.destroy();
-  document.getElementById('domesticChartTitle').textContent = displayName + ' â China Domestic Prices (CNY)';
+  document.getElementById('domesticChartTitle').textContent = displayName + ' - China Domestic Prices (CNY)';
 
   domesticChartObj = new Chart(document.getElementById("domesticChart").getContext("2d"), {
     type: 'bar',
@@ -413,7 +413,7 @@ function renderTables() {
     const name = el === 'PrNd' ? 'Praseodymium-Neodymium' : el;
     const rows = (items, type) => items.map(i => `
       <tr>
-        <td style="color:${type === 'export' ? '#2563eb' : '#ea580c'}">${type === 'export' ? 'ð' : 'ð¨ð³'}</td>
+        <td style="color:${type === 'export' ? '#2563eb' : '#ea580c'}">${type === 'export' ? 'EXP' : 'CN'}</td>
         <td>${i.market}</td>
         <td>${i.unit}</td>
         <td style="text-align:right">${i.low.toLocaleString()}</td>
@@ -426,7 +426,7 @@ function renderTables() {
         <h3>${name}</h3>
         <div class="table-wrap">
         <table>
-          <thead><tr><th></th><th>Market</th><th>Unit</th><th style="text-align:right">Low</th><th style="text-align:right">High</th><th style="text-align:center">Â±</th></tr></thead>
+          <thead><tr><th></th><th>Market</th><th>Unit</th><th style="text-align:right">Low</th><th style="text-align:right">High</th><th style="text-align:center">+/-</th></tr></thead>
           <tbody>
             ${rows(d.export, 'export')}
             ${rows(d.domestic, 'domestic')}
