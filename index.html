@@ -48,7 +48,7 @@
 <body>
 
 <h1>Rare Earth Element Prices</h1>
-<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices (converted at 1 USD = 6.71 CNY) - Week of August 31, 2026</p>
+<p class="subtitle">Export/Delivered Prices vs. China Domestic Ex-Works Prices (converted at 1 USD = 6.7 CNY) - Week of September 30, 2026</p>
 
 <div class="summary-row" id="summaryRow"></div>
 
@@ -84,42 +84,39 @@ const data = {
       { market: "Metal min 99% fob China", unit: "$/kg", low: 6, high: 6.5, change: "nc" },
       { market: "Metal min 99.9% C 0.03% max fob China", unit: "$/kg", low: 7.3, high: 7.5, change: "nc" },
       { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 2600, high: 2750, change: "nc" },
-      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 2.7, high: 3.0, change: "nc" }
+      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 2.7, high: 3.05, change: "nc" }
     ],
     domestic: [
-      { market: "Carbonate min 45% REO ex-works", unit: "$/t", low: 894, high: 969, change: "nc" },
-      { market: "Metal min 99.9% C 0.03% max ex-works", unit: "$/t", low: 6557, high: 7004, change: "nc" },
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 4545, high: 4769, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 2206, high: 2280, change: "nc" }
+      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 2209, high: 2284, change: "nc" }
     ]
   },
   "Dysprosium": {
     export: [
       { market: "Metal min 99% fob China", unit: "$/kg", low: 320, high: 340, change: "nc" },
       { market: "Oxide min 99.5% fob China", unit: "$/kg", low: 260, high: 280, change: "nc" },
-      { market: "Oxide min 99.5% cif Europe", unit: "$/kg", low: 2200, high: 3000, change: "+350.000" },
-      { market: "Oxide min 99.5% ddp US", unit: "$/kg", low: 1800, high: 2200, change: "+200.000" }
+      { market: "Oxide min 99.5% cif Europe", unit: "$/kg", low: 3000, high: 4000, change: "nc" },
+      { market: "Oxide min 99.5% ddp US", unit: "$/kg", low: 3000, high: 4000, change: "+1000.000" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/kg", low: 269.7, high: 272.7, change: "nc" },
-      { market: "Oxide min 99.5% ex-works", unit: "$/kg", low: 216.1, high: 219.1, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "$/kg", low: 264.2, high: 265.7, change: "nc" },
+      { market: "Oxide min 99.5% ex-works", unit: "$/kg", low: 211.9, high: 213.4, change: "nc" }
     ]
   },
   "Europium": {
     export: [
       { market: "Metal min 99.9% fob China", unit: "$/kg", low: 270, high: 280, change: "nc" },
-      { market: "Oxide min 99.99% fob China", unit: "$/kg", low: 30, high: 40, change: "+7.500" }
+      { market: "Oxide min 99.99% fob China", unit: "$/kg", low: 32, high: 42, change: "+2.000" }
     ],
     domestic: [
-      { market: "Oxide min 99.99% ex-works", unit: "$/kg", low: 28.3, high: 29.8, change: "nc" }
+      { market: "Oxide min 99.99% ex-works", unit: "$/kg", low: 28.4, high: 29.9, change: "nc" }
     ]
   },
   "Erbium": {
     export: [
-      { market: "Oxide min 99.5% cif Europe", unit: "$/kg", low: 120, high: 160, change: "+30.000" }
+      { market: "Oxide min 99.5% cif Europe", unit: "$/kg", low: 135, high: 160, change: "nc" }
     ],
     domestic: [
-      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 93145, high: 94635, change: "+745" }
+      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 100000, high: 102985, change: "nc" }
     ]
   },
   "Ferro-dysprosium": {
@@ -127,36 +124,36 @@ const data = {
       { market: "min 80% Dy fob China", unit: "$/kg", low: 255, high: 275, change: "nc" }
     ],
     domestic: [
-      { market: "min 80% Dy ex-works", unit: "$/kg", low: 210.1, high: 213.1, change: "nc" }
+      { market: "min 80% Dy ex-works", unit: "$/kg", low: 204.5, high: 206, change: "nc" }
     ]
   },
   "Ferro-gadolinium": {
     export: [
     ],
     domestic: [
-      { market: "min 75% Gd ex-works", unit: "$/t", low: 27422, high: 27869, change: "nc" }
+      { market: "min 75% Gd ex-works", unit: "$/t", low: 27015, high: 27463, change: "nc" }
     ]
   },
   "Gadolinium": {
     export: [
       { market: "Metal min 99% fob China", unit: "$/kg", low: 110, high: 140, change: "nc" },
       { market: "Oxide min 99.99% fob China", unit: "$/t", low: 90000, high: 110000, change: "nc" },
-      { market: "Oxide min 99.999% fob China", unit: "$/t", low: 100000, high: 120000, change: "nc" },
-      { market: "Oxide 99.99-99.999% cif Europe", unit: "$/kg", low: 1600, high: 2200, change: "-200.000" },
-      { market: "Oxide 99.99-99.999% ddp US", unit: "$/kg", low: 1900, high: 2100, change: "+100.000" }
+      { market: "Oxide min 99.999% fob China", unit: "$/t", low: 110000, high: 130000, change: "nc" },
+      { market: "Oxide 99.99-99.999% cif Europe", unit: "$/kg", low: 1900, high: 2700, change: "nc" },
+      { market: "Oxide 99.99-99.999% ddp US", unit: "$/kg", low: 1900, high: 2300, change: "nc" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 50373, high: 53353, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 28912, high: 29359, change: "nc" },
-      { market: "Oxide min 99.99% ex-works", unit: "$/t", low: 32042, high: 33532, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "$/t", low: 50000, high: 52985, change: "nc" },
+      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 28358, high: 28806, change: "nc" },
+      { market: "Oxide min 99.99% ex-works", unit: "$/t", low: 31343, high: 32836, change: "nc" }
     ]
   },
   "Holmium": {
     export: [
-      { market: "Oxide min 99.5% fob China", unit: "$/t", low: 100000, high: 110000, change: "nc" }
+      { market: "Oxide min 99.5% fob China", unit: "$/t", low: 110000, high: 125000, change: "nc" }
     ],
     domestic: [
-      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 93145, high: 93890, change: "+1118" }
+      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 95224, high: 95821, change: "nc" }
     ]
   },
   "Lanthanum": {
@@ -164,14 +161,12 @@ const data = {
       { market: "Metal min 99% fob China", unit: "$/kg", low: 5, high: 5.3, change: "nc" },
       { market: "Metal min 99.9% C 0.03% max fob China", unit: "$/kg", low: 6.9, high: 7.1, change: "nc" },
       { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 1150, high: 1250, change: "nc" },
-      { market: "Oxide min 99.999% fob China", unit: "$/kg", low: 9.5, high: 10.5, change: "nc" }
+      { market: "Oxide min 99.999% fob China", unit: "$/kg", low: 10, high: 13, change: "nc" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 3577, high: 3875, change: "nc" },
-      { market: "Metal min 99.9% C 0.03% max ex-works", unit: "$/t", low: 6110, high: 6408, change: "nc" },
-      { market: "Oxide min 99.999% ex-works", unit: "$/t", low: 8197, high: 8942, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 849, high: 924, change: "nc" },
-      { market: "Ce chloride min 45% REO ex-works", unit: "$/t", low: 373, high: 447, change: "nc" }
+      { market: "Oxide min 99.999% ex-works", unit: "$/t", low: 6716, high: 7463, change: "nc" },
+      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 851, high: 925, change: "nc" },
+      { market: "Ce chloride min 45% REO ex-works", unit: "$/t", low: 373, high: 448, change: "nc" }
     ]
   },
   "Lutetium": {
@@ -179,7 +174,6 @@ const data = {
       { market: "Oxide min 99.99% fob China", unit: "$/kg", low: 1050, high: 1200, change: "nc" }
     ],
     domestic: [
-      { market: "Oxide min 99.99% ex-works", unit: "$/kg", low: 775, high: 804.8, change: "nc" }
     ]
   },
   "Mischmetal": {
@@ -188,87 +182,85 @@ const data = {
       { market: "Low Zn and Mg fob China", unit: "$/kg", low: 24.5, high: 27.5, change: "nc" }
     ],
     domestic: [
-      { market: "35% La 65% Ce ex-works", unit: "$/t", low: 4024, high: 4173, change: "nc" },
-      { market: "Low Zn and Mg ex-works", unit: "$/t", low: 25335, high: 28316, change: "nc" }
+      { market: "35% La 65% Ce ex-works", unit: "$/t", low: 4030, high: 4179, change: "nc" },
+      { market: "Low Zn and Mg ex-works", unit: "$/t", low: 25373, high: 28358, change: "nc" }
     ]
   },
   "Neodymium": {
     export: [
-      { market: "Metal min 99% fob China", unit: "$/kg", low: 147, high: 150, change: "nc" },
-      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 120000, high: 123000, change: "nc" },
+      { market: "Metal min 99% fob China", unit: "$/kg", low: 146.5, high: 149.5, change: "nc" },
+      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 119500, high: 122500, change: "nc" },
       { market: "Metal 99% cif Europe", unit: "$/kg", low: 146, high: 157, change: "nc" },
-      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 119, high: 131, change: "nc" },
-      { market: "Oxide 99.5-99.9% ddp US", unit: "$/kg", low: 120, high: 130, change: "+2.000" }
+      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 120, high: 125, change: "nc" },
+      { market: "Oxide 99.5-99.9% ddp US", unit: "$/kg", low: 120, high: 125, change: "-2.500" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 142027, high: 142772, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 114456, high: 115201, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "$/t", low: 141791, high: 142537, change: "nc" },
+      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 114179, high: 114925, change: "nc" }
     ]
   },
   "Praseodymium": {
     export: [
-      { market: "Metal min 99% fob China", unit: "$/kg", low: 156, high: 159, change: "nc" },
-      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 121000, high: 124000, change: "nc" },
-      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 115, high: 128, change: "nc" },
-      { market: "Oxide 99.5-99.9% ddp US", unit: "$/kg", low: 120, high: 130, change: "+2.000" }
+      { market: "Metal min 99% fob China", unit: "$/kg", low: 155.5, high: 158.5, change: "nc" },
+      { market: "Oxide 99.5-99.9% fob China", unit: "$/t", low: 120500, high: 123500, change: "nc" },
+      { market: "Oxide 99.5-99.9% cif Europe", unit: "$/kg", low: 115, high: 125, change: "nc" },
+      { market: "Oxide 99.5-99.9% ddp US", unit: "$/kg", low: 115, high: 120, change: "-7.500" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 150969, high: 151714, change: "nc" },
-      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 115201, high: 115946, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "$/t", low: 150746, high: 151493, change: "nc" },
+      { market: "Oxide 99.5-99.9% ex-works", unit: "$/t", low: 114925, high: 115672, change: "nc" }
     ]
   },
   "PrNd": {
     export: [
-      { market: "Metal min 99% fob China", unit: "$/kg", low: 131.2, high: 133.2, change: "-0.100" },
-      { market: "Oxide min 99% fob China", unit: "$/t", low: 109400, high: 111400, change: "+100" },
-      { market: "Oxide min 99% cif Europe", unit: "$/kg", low: 107, high: 115, change: "nc" },
-      { market: "Oxide min 99% ddp US", unit: "$/kg", low: 108, high: 115, change: "+1.000" }
+      { market: "Metal min 99% fob China", unit: "$/kg", low: 133.5, high: 135.5, change: "nc" },
+      { market: "Oxide min 99% fob China", unit: "$/t", low: 111000, high: 113000, change: "nc" },
+      { market: "Oxide min 99% cif Europe", unit: "$/kg", low: 110, high: 120, change: "nc" },
+      { market: "Oxide min 99% ddp US", unit: "$/kg", low: 110, high: 120, change: "+3.500" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 130700, high: 131595, change: "-224" },
-      { market: "Oxide min 99% ex-works", unit: "$/t", low: 108495, high: 108793, change: "+75" }
+      { market: "Metal min 99% ex-works", unit: "$/t", low: 133134, high: 133881, change: "nc" },
+      { market: "Oxide min 99% ex-works", unit: "$/t", low: 110149, high: 110448, change: "nc" }
     ]
   },
   "Samarium": {
     export: [
       { market: "Metal min 99% fob China", unit: "$/kg", low: 30, high: 40, change: "nc" },
-      { market: "Oxide min 99.5% fob China", unit: "$/kg", low: 8, high: 10, change: "nc" }
+      { market: "Oxide min 99.5% fob China", unit: "$/kg", low: 9, high: 11, change: "nc" }
     ],
     domestic: [
-      { market: "Metal min 99% ex-works", unit: "$/t", low: 12668, high: 13413, change: "nc" },
-      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 2310, high: 2534, change: "nc" }
+      { market: "Metal min 99% ex-works", unit: "$/t", low: 12687, high: 13433, change: "nc" },
+      { market: "Oxide min 99.5% ex-works", unit: "$/t", low: 2313, high: 2537, change: "nc" }
     ]
   },
   "Terbium": {
     export: [
       { market: "Metal min 99.9% fob China", unit: "$/kg", low: 1510, high: 1540, change: "nc" },
       { market: "Oxide min 99.99% fob China", unit: "$/kg", low: 1240, high: 1270, change: "nc" },
-      { market: "Oxide min 99.99% cif Europe", unit: "$/kg", low: 5000, high: 5600, change: "+200.0" },
-      { market: "Oxide min 99.99% ddp US", unit: "$/kg", low: 4700, high: 5200, change: "+200.000" }
+      { market: "Oxide min 99.99% cif Europe", unit: "$/kg", low: 6100, high: 7100, change: "nc" },
+      { market: "Oxide min 99.99% ddp US", unit: "$/kg", low: 6000, high: 7000, change: "+1200.000" }
     ],
     domestic: [
-      { market: "Metal min 99.9% ex-works", unit: "$/kg", low: 1239.9, high: 1247.4, change: "nc" },
-      { market: "Oxide min 99.99% ex-works", unit: "$/kg", low: 1006, high: 1010.4, change: "nc" }
+      { market: "Metal min 99.9% ex-works", unit: "$/kg", low: 1203, high: 1209, change: "-5.2" },
+      { market: "Oxide min 99.99% ex-works", unit: "$/kg", low: 965.7, high: 970.1, change: "-6.0" }
     ]
   },
   "Ytterbium": {
     export: [
-      { market: "Oxide min 99.99% fob China", unit: "$/t", low: 30000, high: 45000, change: "nc" }
+      { market: "Oxide min 99.99% fob China", unit: "$/t", low: 35000, high: 50000, change: "nc" }
     ],
     domestic: [
-      { market: "Oxide min 99.99% ex-works", unit: "$/t", low: 13413, high: 14903, change: "nc" }
     ]
   },
   "Yttrium": {
     export: [
       { market: "Metal min 99.9% fob China", unit: "$/kg", low: 61, high: 76, change: "nc" },
-      { market: "Oxide min 99.999% fob China", unit: "$/t", low: 34000, high: 45000, change: "nc" },
-      { market: "Oxide 99.999% cif Europe", unit: "$/kg", low: 1000, high: 1300, change: "+100.000" },
-      { market: "Oxide min 99.999% ddp US", unit: "$/kg", low: 850, high: 1200, change: "nc" }
+      { market: "Oxide min 99.999% fob China", unit: "$/t", low: 36000, high: 48000, change: "nc" },
+      { market: "Oxide 99.999% cif Europe", unit: "$/kg", low: 1000, high: 1200, change: "+50.000" },
+      { market: "Oxide min 99.999% ddp US", unit: "$/kg", low: 1000, high: 1300, change: "nc" }
     ],
     domestic: [
-      { market: "Metal min 99.9% ex-works", unit: "$/kg", low: 39.5, high: 42.5, change: "nc" },
-      { market: "Oxide min 99.999% ex-works", unit: "$/t", low: 8644, high: 9091, change: "nc" }
+      { market: "Oxide min 99.999% ex-works", unit: "$/t", low: 8955, high: 9254, change: "nc" }
     ]
   }
 };
@@ -359,7 +351,7 @@ function renderCharts() {
     }
   });
 
-  // --- Domestic chart (USD, converted from CNY at 6.71) --- Week of August 31, 2026
+  // --- Domestic chart (USD, converted from CNY at 6.7) --- Week of September 30, 2026
   const domLabels = el.domestic.map(i => truncLabel(i.market));
   const domLow = el.domestic.map(i => i.low);
   const domHigh = el.domestic.map(i => i.high);
